@@ -1,6 +1,6 @@
-let Name = prompt("Enter ur name: ")
+// let Name = prompt("Enter ur name: ")
 let player = {
-     name: Name,
+     name: "Krishna",
      chips: 200
 }
 
@@ -14,7 +14,7 @@ let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 let playerEl = document.getElementById("player-el")
 
-playerEl.textContent = "Name : " + player.name + "  Chips: $" + player.chips
+playerEl.textContent = "Name :" + player.name + " Chips: $" + player.chips
 
 function getRandomCard() {
      let randomNumber = Math.floor(Math.random() * 13) + 1
