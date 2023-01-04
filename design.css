@@ -10,8 +10,7 @@ body {
 .container{
      width: 40%;
      height: 50%;
-     /* border-color: 2px solid white; */
-     margin: 20% 30%;
+     margin: 10% 30%;
  }
 
 h1 {
