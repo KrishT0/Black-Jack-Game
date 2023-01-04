@@ -1,5 +1,6 @@
+let Name=prompt("Enter ur name: ")
 let player = {
-     name: "Per",
+     name:Name,
      chips: 200
 }
 
@@ -13,7 +14,7 @@ let sumEl = document.getElementById("sum-el")
 let cardsEl = document.getElementById("cards-el")
 let playerEl = document.getElementById("player-el")
 
-playerEl.textContent = player.name + ": $" + player.chips
+playerEl.textContent = "Name : "+player.name + ": $" + player.chips
 
 function getRandomCard() {
      let randomNumber = Math.floor(Math.random() * 13) + 1
@@ -32,6 +33,7 @@ function startGame() {
      let secondCard = getRandomCard()
      cards = [firstCard, secondCard]
      sum = firstCard + secondCard
+     
      renderGame()
 }
 
