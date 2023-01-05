@@ -8,10 +8,10 @@ body {
 }
 
 .container {
-     width: 40%;
-     height: 50%;
+     width: 55%;
+     height: auto;
      margin: 20vh auto;
-     border:solid;
+     border: solid;
      border-color: goldenrod;
      border-width: 5px;
      border-radius: 1em;
@@ -27,7 +27,7 @@ h1 {
 
 button {
      color: #016f32;
-     width: 150px;
+     width: auto;
      background: goldenrod;
      padding-top: 5px;
      padding-bottom: 5px;
