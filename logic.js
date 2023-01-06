@@ -27,15 +27,18 @@ function getRandomCard() {
      }
 }
 
-function startGame() {
+let startEl = document.querySelector("#start-el")
+
+startEl.addEventListener("click", function startGame() {
      isAlive = true
      let firstCard = getRandomCard()
      let secondCard = getRandomCard()
      cards = [firstCard, secondCard]
      sum = firstCard + secondCard
-
      renderGame()
-}
+})
+
+
 
 function renderGame() {
      cardsEl.textContent = "Cards: "
@@ -56,8 +59,8 @@ function renderGame() {
      messageEl.textContent = message
 }
 
-
-function newCard() {
+let newCard = document.querySelector("#new-card")
+newCard.addEventListener("click", function newCard() {
      if (isAlive === true && hasBlackJack === false) {
           let card = getRandomCard()
           sum += card
@@ -65,3 +68,4 @@ function newCard() {
           renderGame()
      }
 }
+)
