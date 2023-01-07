@@ -1,4 +1,3 @@
-// let Name = prompt("Enter ur name: ")
 let player = {
      name: "Krishna",
      chips: 200
